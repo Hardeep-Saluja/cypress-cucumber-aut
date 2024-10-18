@@ -1,18 +1,28 @@
 {
   "name": "cypress-cucumber-aut",
   "version": "1.0.0",
-  "description": "Cypress Automation with Cucumber",
+  "description": "Cypress Automation with Cucumber example",
   "main": "index.js",
   "scripts": {
     "test:via_runner": "cypress open",
-    "test:via_cli": "cypress run",
-    "cyrun": "node_modules/.bin/cypress run --browser chrome"
+    "test:via_cli": "cypress run"
   },
-  "author": "Hardeep",
+  "author": "Hardeep Singh Saluja",
   "license": "ISC",
+  "keywords": [],
   "dependencies": {
+    "@babel/core": "^7.24.9",
+    "@babel/preset-env": "^7.24.8",
+    "@babel/preset-react": "^7.24.7",
     "@badeball/cypress-cucumber-preprocessor": "^20.1.2",
     "@cypress/webpack-preprocessor": "^6.0.2",
-    "cypress": "^13.14.2"
+    "cypress": "13.6.6",
+    "esbuild": "0.21.5",
+    "https-browserify": "1.0.0",
+    "stream-http": "3.2.0",
+    "webpack": "^5.93.0"
+  }, 
+  "devDependencies": {
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.3"
   }
 }
